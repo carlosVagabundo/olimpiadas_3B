@@ -72,7 +72,7 @@ function mostraResultado(){
         caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
     }
 }
-    
+    podiumMedalhas();
 }
 
 //crie uma função podiumMedalhas
