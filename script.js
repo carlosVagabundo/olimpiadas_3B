@@ -77,7 +77,6 @@ function podiumMedalhas(pontos) {
         caixaPerguntas.textContent = "Resultado da competição: 4 pontos é PRATA!";
     } else if (pontos === 5) {
         caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
-        // Corrigido o texto abaixo de Bronze para OURO
         caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!"; 
     } else if (pontos < 3) {
         caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
