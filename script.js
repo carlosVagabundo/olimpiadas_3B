@@ -56,7 +56,19 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaPerguntas.textContent = "Resultado";
     caixaAlternativas.textContent = "";
-    function podiumMedalhas() {
+function podiumMedalhas(posicao) {
+    if (posicao === 1) return "Medalha de ouro";
+    if (posicao === 2) return "Medalha de Prata";
+    if (posicao === 3) return "Medalha de Bronze";
+    return "Sem medalha.";
+}
+
+let resultado = podiumMedalhas(1);
+console.log(resultado);
+    
+}
+
+function podiumMedalhas(pontos) {
     if (pontos === 3) {
         caixaPrincipal.style.backgroundImage = "url('img/bronze.png')";
         caixaPerguntas.textContent = "Resultado da competição: 3 pontos é BRONZE!";
@@ -71,8 +83,6 @@ function mostraResultado(){
         caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
         caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
     }
-}
-    podiumMedalhas();
 }
 
 //crie uma função podiumMedalhas
